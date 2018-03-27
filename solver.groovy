@@ -149,7 +149,7 @@ def combine(Node one, Node two) {
         returnTree.left = combine(one.left, two)
         returnTree.right = combine(one.right, two)
     } else if (one.root > two.root) {
-        returnTree.right = two.root
+        returnTree.root = two.root
         returnTree.left = combine(one, two.left)
         returnTree.right = combine(one, two.right)
     }
